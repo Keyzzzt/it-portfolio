@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+$Roboto: 'Roboto', sans-serif;
+
+// Colors
+$gray-dark: #1f1f20;
+$gray-medium: #252527;
+$gray-light: #363637;
+$blue: #4e93e6;
+$red: #dc3545;
+$light: #fdfdfd;
+$orange: #fd7e14;
+
+// Border radius
+$BR-sm: 5px;
+
+// spacing
+$spacing-sm: 12px;
+
+// Font weight
+$fw-sm: 100;
+
+// Font size
+$fz-sm: 0.5rem;
+
+
+@mixin breakpoint($point) {
+  @if $point == 1400 {
+    @media (min-width: 1400px) {
+      @content;
+    }
+  } @else if $point == 1200 {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else if $point == 992 {
+    @media (min-width: 992px) {
+      @content;
+    }
+  } @else if $point == 768 {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $point == 576 {
+    @media (min-width: 576px) {
+      @content;
+    }
+  }
+}
