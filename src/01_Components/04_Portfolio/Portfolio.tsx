@@ -3,8 +3,8 @@ import s from './portfolio.module.scss'
 
 export const Portfolio = () => {
     return (
-        <div className={s.portfolio}>
+        <section className={s.portfolio} id='portfolio'>
             Portfolio
-        </div>
+        </section>
     )
 }

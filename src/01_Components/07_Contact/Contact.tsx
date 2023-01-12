@@ -3,8 +3,8 @@ import s from './contact.module.scss'
 
 export const Contact = () =>  {
     return (
-        <div className={s.contact}>
+        <section className={s.contact} id='contact'>
             Contact
-        </div>
+        </section>
     )
 }

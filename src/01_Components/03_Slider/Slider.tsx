@@ -4,8 +4,8 @@ import s from './slider.module.scss'
 
 export const Slider = () =>  {
     return (
-        <div className={s.slider}>
+        <section className={s.slider} id='services'>
             Slider
-        </div>
+        </section>
     )
 }

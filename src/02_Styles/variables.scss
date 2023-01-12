@@ -8,7 +8,7 @@ $gray-medium: #252527;
 $gray-light: #363637;
 $blue: #4e93e6;
 $red: #dc3545;
-$light: #fdfdfd;
+$light: #fff0f0;
 $orange: #fd7e14;
 
 // Border radius
@@ -47,3 +47,40 @@ $fz-sm: 0.5rem;
     }
   }
 }
+
+
+// REMOVE
+
+// Border radius
+$bRadius10: 10px;
+$bRadius5: 5px;
+
+// spacing
+$spacing-sm: 12px;
+$spacing-md: 24px;
+$spacing-lg: 32px;
+$spacing-xl: 64px;
+
+// Font weight
+$fw-sm: 100;
+$fw-md: 400;
+$fw-lg: 700;
+
+// Header
+$headerHeight: 120px;
+
+// Font size
+$fz-sm: 0.5rem;
+$fz-md: 1.2rem;
+$fz-lg: 1.5rem;
+$fz-xl: 2rem;
+$fz-xxl: 2.5rem;
+
+$letter-spacing: 2px;
+$transition3: 0.3s ease all;
+
+$borderRadius: 12px;
+
+
+$m10: 10px;
+$m20: 20px;

@@ -3,8 +3,8 @@ import s from './skills.module.scss'
 
 export const Skills = () =>  {
     return (
-        <div className={s.skills}>
+        <section className={s.skills} id='skills'>
             Skills
-        </div>
+        </section>
     )
 }
