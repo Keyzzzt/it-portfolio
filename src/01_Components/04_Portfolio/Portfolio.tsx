@@ -1,4 +1,3 @@
-// @ts-ignore
 import s from './portfolio.module.scss'
 
 export const Portfolio = () => {

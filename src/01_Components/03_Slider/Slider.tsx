@@ -1,4 +1,3 @@
-// @ts-ignore
 import s from './slider.module.scss'
 
 

@@ -1,4 +1,3 @@
-// @ts-ignore
 import s from './hireMe.module.scss'
 
 export const HireMe = () =>  {

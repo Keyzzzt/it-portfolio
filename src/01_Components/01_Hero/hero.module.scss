@@ -2,14 +2,7 @@
 
 
 .hero {
-    background-color: $gray-medium;
-}
-.heroImage {
-    width: 200px;
-    height: 250px;
-    background-color: #dc3545;
-    margin-top: 50px;
-    z-index: 100;
+    background-color: $grey-dark;
 }
 
 .container {
@@ -17,34 +10,55 @@
     flex-direction: column;
     padding: 100px 20px;
     align-items: center;
-    background-color: #4e93e6;
-    @include breakpoint(768) {
+
+    @include breakpoint(576) {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 100px 35px;
+    }
+    @include breakpoint(768) {
+        padding: 100px 100px;
+    }
+    @include breakpoint(992) {
+        padding: 100px 200px;
+    }
+    @include breakpoint(1200) {
+        max-width: 1140px;
     }
 }
 
-.heroInfo{
+.heroInfo {
     align-self: flex-start;
-    position: relative;
-    min-width: 300px;
-    min-height: 70px;
-    background-color: #dc3545;
-    //&::after{
-    //    content: '';
-    //    display: block;
-    //    position: absolute;
-    //    top: 28px;
-    //    left: 50px;
-    //    width: 150px;
-    //    height: 15px;
-    //    background-color: $orange;
-    //    transform: skew(-20deg);
-    //}
-    .subtitle{
-    }
-    .name {
-        font-size: 1.5rem;
+    min-height: 130px;
+    @include breakpoint(576) {
+        align-self: center;
     }
 }
 
+.line1, .line2 {
+    font-size: 1.5rem;
+}
+
+.name {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    position: relative;
+    margin-bottom: 10px;    
+    @include breakpoint(992) {
+        font-size: 2.5rem;
+    }
+}
+.heroImage {
+    width: 200px;
+    height: 250px;
+    background-color: #777;
+    margin-top: 50px;
+
+    @include breakpoint(768) {
+        width: 250px;
+        height: 300px;
+    }
+}

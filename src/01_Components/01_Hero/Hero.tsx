@@ -1,14 +1,12 @@
-import React from "react";
-//@ts-ignore
 import s from './hero.module.scss';
 //@ts-ignore
 import TypeWriterEffect from 'react-typewriter-effect';
-//@ts-ignore
 // import foto from './../../img/foto.png'
 
 
 type HeroProps = {
-    subtitle: string
+    line1: string
+    line2: string
     name: string
     stack: string[]
 }
@@ -18,8 +16,12 @@ export const Hero = (props: HeroProps) => {
         <section className={s.hero} id='hero'>
             <div className={s.container}>
                 <div className={s.heroInfo}>
-                    <div className={s.subtitle}>{props.subtitle}</div>
-                    <div className={s.name}>{props.name}</div>
+                    <div className={s.line1}>{props.line1}</div>
+                    <div className={s.line2}>{props.line2}</div>
+                    <div className={s.name}>
+                        {props.name}
+                    </div>
+                    
                     <TypeWriterEffect
                         textStyle={{
                             fontSize: '1.5em',

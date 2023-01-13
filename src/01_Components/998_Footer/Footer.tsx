@@ -1,4 +1,3 @@
-// @ts-ignore
 import s from './footer.module.scss'
 
 export const Footer = () =>  {

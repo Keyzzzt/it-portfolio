@@ -1,4 +1,3 @@
-// @ts-ignore
 import s from './skills.module.scss'
 
 export const Skills = () =>  {
