@@ -1,8 +1,9 @@
-@import "./../../02_Styles/variables.scss";
+@import "../../02_Styles/variables.scss";
 
-
-.hero {
+.heroSection {
     background-color: $grey-dark;
+    padding: $verticalPaddingMobile;
+    min-height: 50vh;
 }
 
 .container {
@@ -11,26 +12,23 @@
     padding: 100px 20px;
     align-items: center;
 
-    @include breakpoint(576) {
+    // temp
+    background-color: #4e93e6;
+
+    @include breakpoint(480) {
         flex-direction: row;
         justify-content: space-between;
-        padding: 100px 35px;
     }
-    @include breakpoint(768) {
-        padding: 100px 100px;
-    }
-    @include breakpoint(992) {
-        padding: 100px 200px;
-    }
-    @include breakpoint(1200) {
-        max-width: 1140px;
-    }
+
 }
 
 .heroInfo {
     align-self: flex-start;
     min-height: 130px;
-    @include breakpoint(576) {
+
+    // temp
+    background-color: #777777;
+    @include breakpoint(480) {
         align-self: center;
     }
 }
@@ -47,13 +45,13 @@
     font-size: 2rem;
     position: relative;
     margin-bottom: 10px;    
-    @include breakpoint(992) {
+    @include breakpoint(1024) {
         font-size: 2.5rem;
     }
 }
 .heroImage {
-    width: 200px;
-    height: 250px;
+    width: 100px;
+    height: 150px;
     background-color: #777;
     margin-top: 50px;
 

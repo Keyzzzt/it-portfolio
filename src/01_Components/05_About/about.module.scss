@@ -1,18 +1,28 @@
-@import "./../../02_Styles/variables.scss";
+@import "../../02_Styles/variables.scss";
 
+.about {
+  background-color: $grey-dark;
+  padding: $verticalPaddingMobile;
+  min-height: 50vh;
+
+}
 
 .container {
-  background-color: $grey-dark;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px 20px 50px 20px;
+
+  // temp
+  background-color: #4e93e6;
 }
 
-.containerTitle {
-  font-size: $fz-lg;
-  text-align: center;
+.sectionTitle{
+  font-size: $sectionTitleMobile;
   padding: 20px;
+  text-align: center;
+
+  //Temp
+  background-color: silver;
 }
 .accordion {
 }
@@ -26,10 +36,6 @@
 
 .accordionItem:first-of-type {
   border-top: 1px solid $light;
-}
-.accordionItemTitle {
-  // display: block;
-  // width: 100%;
 }
 .accordionItemBtn {
   display: flex;
@@ -81,7 +87,6 @@
   }
 }
 
-// .accordionSubItem {
-//   margin: 15px 0 5px 0;
-//   text-decoration: underline;
-// }
+.singleLine{
+  padding: 5px;
+}

@@ -1,9 +1,106 @@
-@import "./../../02_Styles/variables.scss";
+@import "../../02_Styles/variables.scss";
+.sliderSection {
+  background-color: $grey-light;
+  padding: $verticalPaddingMobile;
+}
 
+.sliderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  touch-action: pan-x; // Mobile browser touch action
+
+  // Temp
+  background-color: #4e93e6;
+}
+
+.sectionTitle{
+  font-size: $sectionTitleMobile;
+  padding: 20px;
+  text-align: center;
+  //Temp
+  background-color: silver;
+}
 
 .slider {
-    background-color: $grey-dark;
+  position: relative;
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  @include breakpoint(480) {
+  }
+  @include breakpoint(768) {
+  }
+  @include breakpoint(1024) {
+  }
 
-    //temp
-    height: 100vh;
+}
+
+
+.sliderList {
+  display: flex;
+  min-width: 100%; // If image will be less than container, then it take size of container.
+  transition: $transition3;
+  &.swiping {
+    transition: none;
+  }
+}
+
+.sliderItem {
+  width: 100%;
+  flex-shrink: 0;
+}
+.sliderImage {
+  width: 100%;
+  height: auto;
+  user-select: none;
+}
+
+.sliderIndicator {
+  display: flex;
+  position: absolute;
+  top: 200px;
+  &Item {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 2px solid $orange;
+    margin: 10px 10px 0 0;
+    cursor: pointer;
+    &.active {
+      background-color: $orange;
+      border-color: $orange;
+    }
+    @include breakpoint(768) {
+      height: 15px;
+      width: 15px;
+    }
+    @include breakpoint(1024) {
+    }
+  }
+  @include breakpoint(768) {
+    top: 334px;
+  }
+  @include breakpoint(1024) {
+    top: 444px;
+  }
+}
+
+.new {
+  position: absolute;
+  display: block;
+  top: 10px;
+  left: 10px;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  background-color: $grey-light;
+  z-index: 1;
+  @include breakpoint(768) {
+    top: 20px;
+    left: 20px;
+    padding: 15px 20px;
+    font-size: 1.5rem;
+  }
 }

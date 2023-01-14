@@ -1,6 +1,6 @@
 import { FC, useEffect, useRef, useState } from 'react'
-import s from './Accordion.module.scss'
-import { AccordionData } from './Accordion'
+import s from './about.module.scss'
+import { AccordionData } from './About'
 import { getRefValue } from '../../utils/getRefValue'
 
 type Props = {
@@ -30,14 +30,11 @@ export const AccordionItem: FC<Props> = ({ data, isOpen, btnOnClick }) => {
       </h2>
       <div className={s.accordionItemContainer} style={{ height }}>
         <div ref={contentRef} className={s.accordionItemContent}>
-          {data.value.map((el: any) => {
-            return el.value === '' ? null : (
-              <div>
-                <div>{el}</div>
-              </div>
+          {data.value.map((el, i) => {
+            return el === '' ? null : (
+                <div key={i} className={s.singleLine}>{el}</div>
             )
           }
-
           )}
         </div>
       </div>

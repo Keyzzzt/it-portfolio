@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
-
-$Roboto: 'Roboto', sans-serif;
-
 // Colors
 $grey-dark: #1f1f20;
 $grey-medium: #252527;
@@ -11,17 +7,32 @@ $red: #dc3545;
 $light: #fff0f0;
 $orange: #fd7e14;
 
-// Border radius
-$BR-sm: 5px;
+// Font sizes
+$sectionTitleMobile: 2rem;
+$sectionTitleDesktop: 3rem;
 
-// spacing
-$spacing-sm: 12px;
+// Section vertical padding
+$verticalPaddingMobile: 40px 0;
+
+// Adaptive
+$mediaMax480: 300px;
+$mediaMax768: 460px;
+$mediaMax1024: 760px;
+$mediaMax1200: 999px;
+$mediaMin1201: 1140px;
+
+
+// Border radius
+$bRadius10: 10px;
+$bRadius5: 5px;
+
+// Transition
+$transition3: 0.3s ease all;
 
 // Font weight
 $fw-sm: 100;
-
-// Font size
-$fz-sm: 0.5rem;
+$fw-md: 400;
+$fw-lg: 700;
 
 
 @mixin breakpoint($point) {
@@ -33,16 +44,16 @@ $fz-sm: 0.5rem;
     @media (min-width: 1200px) {
       @content;
     }
-  } @else if $point == 992 {
-    @media (min-width: 992px) {
+  } @else if $point == 1024 {
+    @media (min-width: 1024px) {
       @content;
     }
   } @else if $point == 768 {
     @media (min-width: 768px) {
       @content;
     }
-  } @else if $point == 576 {
-    @media (min-width: 576px) {
+  } @else if $point == 480 {
+    @media (min-width: 480px) {
       @content;
     }
   }
@@ -51,20 +62,12 @@ $fz-sm: 0.5rem;
 
 // REMOVE
 
-// Border radius
-$bRadius10: 10px;
-$bRadius5: 5px;
-
 // spacing
 $spacing-sm: 12px;
 $spacing-md: 24px;
 $spacing-lg: 32px;
 $spacing-xl: 64px;
 
-// Font weight
-$fw-sm: 100;
-$fw-md: 400;
-$fw-lg: 700;
 
 // Header
 $headerHeight: 120px;
@@ -75,12 +78,3 @@ $fz-md: 1.2rem;
 $fz-lg: 1.5rem;
 $fz-xl: 2rem;
 $fz-xxl: 2.5rem;
-
-$letter-spacing: 2px;
-$transition3: 0.3s ease all;
-
-$borderRadius: 12px;
-
-
-$m10: 10px;
-$m20: 20px;

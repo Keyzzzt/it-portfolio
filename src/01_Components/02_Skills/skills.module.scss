@@ -1,9 +1,30 @@
-@import "./../../02_Styles/variables.scss";
+@import "../../02_Styles/variables.scss";
 
 
-.skills {
-    background-color: $grey-medium;
+.sectionSkills {
+  background-color: $grey-medium;
+  padding: $verticalPaddingMobile;
+  min-height: 100vh;
+}
 
-    //temp
-    height: 100vh;
+.container {
+
+
+  //Temp
+  background-color: #4e93e6;
+
+}
+
+.skillsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sectionTitle {
+  font-size: $sectionTitleMobile;
+  padding: 20px;
+  text-align: center;
+
+  //Temp
+  background-color: silver;
 }

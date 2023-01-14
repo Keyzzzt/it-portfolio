@@ -1,0 +1,63 @@
+@import '../../../02_Styles/variables';
+
+.field {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 40px; // This is for error message
+  &.shake {
+    animation: shake 0.3s ease-in-out;
+  }
+}
+
+textarea.customInput {
+  height: 100px;
+  resize: none;
+  overflow: auto;
+  @include breakpoint(1024) {
+  }
+}
+
+.customInput {
+  width: 100%;
+  border: 1px solid $grey-dark;
+  border-radius: $bRadius5;
+  padding: 10px 10px;
+  @include breakpoint(480) {
+  }
+  @include breakpoint(768) {
+    font-size: 1.2rem;
+    width: 70%;
+  }
+  @include breakpoint(1024) {
+  }
+
+  &::placeholder {
+    color: $grey-dark;
+  }
+
+
+}
+
+@keyframes shake {
+  20%,
+  80% {
+    margin-left: -12px;
+  }
+  40%,
+  60% {
+    margin-left: 12px;
+  }
+}
+
+.errorText {
+  position: absolute;
+  color: $red;
+  margin: 5px 0;
+  text-align: left;
+}
+
+.borderError {
+  border-color: $red;
+}

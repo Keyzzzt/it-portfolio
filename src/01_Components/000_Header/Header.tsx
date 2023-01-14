@@ -1,9 +1,21 @@
 import {useEffect, useState} from "react";
 import {useWindowSize} from "../../utils/useWindowSize";
-// @ts-ignore
 import s from './header.module.scss'
+import globalStyles from "../../02_Styles/global.module.scss";
 
-export const Header = () =>  {
+
+
+type MenuItem = {
+    type: string
+    title?: string,
+    class?: string
+    link: string
+}
+type HeaderProps = {
+    menuItems: MenuItem[]
+}
+
+export const Header = (props: HeaderProps) =>  {
     const [menuOpen, setMenuOpen] = useState(false)
     const size = useWindowSize()
 
@@ -14,47 +26,16 @@ export const Header = () =>  {
     }, [size, menuOpen])
     return (
         <header className={s.header}>
-            <div className={s.content}>
+            <div className={globalStyles.container + ' ' + s.container}>
                 <nav className={`${s.menu} ${menuOpen && size.width! < 992 ? s.isMenu : ''}`}>
                     <ul>
-                        <li>
-                            <a href='#skills' onClick={() => setMenuOpen(false)}>
-                                SKILLS
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#services" onClick={() => setMenuOpen(false)}>
-                                SERVICES
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#portfolio" onClick={() => setMenuOpen(false)}>
-                                PORTFOLIO
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#about" onClick={() => setMenuOpen(false)}>
-                                ABOUT
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#hireme" onClick={() => setMenuOpen(false)}>
-                                HIRE ME
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href='#contact' onClick={() => setMenuOpen(false)}>
-                                CONTACT
-                            </a>
-                        </li>
-                        <li>
-                            <a href='#hero' onClick={() => setMenuOpen(false)}>
-                                <i className="fa-sharp fa-solid fa-house" />
-                            </a>
-                        </li>
-
-
+                        {props.menuItems.map((menuItem, i) => (
+                            <li>
+                                <a href={`#${menuItem.link}`} onClick={() => setMenuOpen(false)}>
+                                    {menuItem.type === 'title' ? menuItem.title : (<i className={menuItem.class} />)}
+                                </a>
+                            </li>
+                        ))}
                     </ul>
                 </nav>
                 <div className={s.burgerMenu}>
