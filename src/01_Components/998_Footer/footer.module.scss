@@ -2,19 +2,20 @@
 
 
 .footer {
-    background-color: $grey-medium;
-    padding: $verticalPaddingMobile;
-    min-height: 20vh;
+  background-color: $grey-medium;
+  padding: $verticalPaddingMobile;
+  min-height: 20vh;
 }
-.container{
-    background-color: #4e93e6;
+
+.container {
+  background-color: #4e93e6;
 }
 
 .sectionTitle {
-    font-size: $sectionTitleMobile;
-    padding: 20px;
-    text-align: center;
+  font-size: $sectionTitleMobile;
+  padding: 20px;
+  text-align: center;
 
-    //Temp
-    background-color: silver;
+  //Temp
+  background-color: silver;
 }

@@ -1,17 +1,17 @@
 import s from './skills.module.scss'
 import globalStyles from "../../02_Styles/global.module.scss";
-import {SingleSkill, SkillsList} from "../999_Chunks/SingleSkill/SingleSkill";
-import React from "react";
+import {SingleSkill, SkillsList} from "./SingleSkill/SingleSkill";
+import React, {FC} from "react";
 
 
-export const Skills = (props: SkillsList) => {
+export const Skills: FC<SkillsList> = ({skillsList}) => {
     return (
         <section className={s.sectionSkills} id='skills'>
+            <h2 className={s.sectionTitle}>Skills</h2>
             <div className={globalStyles.container + ' ' + s.container}>
-                <h2 className={s.sectionTitle}>Skills</h2>
-                <div className={s.skillsWrapper}>
-                    <SingleSkill skillsList={props.skillsList}/>
-                </div>
+                <ul className={s.skillsWrapper}>
+                    <SingleSkill skillsList={skillsList}/>
+                </ul>
             </div>
         </section>
     )

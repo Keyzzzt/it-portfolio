@@ -4,12 +4,11 @@
 .sectionSkills {
   background-color: $grey-medium;
   padding: $verticalPaddingMobile;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 .container {
-
-
+  min-height: 90vh;
   //Temp
   background-color: #4e93e6;
 
@@ -17,7 +16,13 @@
 
 .skillsWrapper {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  @include breakpoint(480) {
+    flex-direction: row;
+  }
+
 }
 
 .sectionTitle {

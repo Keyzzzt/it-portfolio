@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react'
+import React, {FC, useRef, useState} from 'react'
 import s from './slider.module.scss'
 import globalStyles from "../../02_Styles/global.module.scss";
 import {SliderItem, SliderItemProps} from './SliderItem'
@@ -18,7 +18,7 @@ function getTouchEventData(
 // Sensitivity value. Greater value = less sensitivity
 const MIN_SWIPE_REQUIRE = 35
 
-export const Slider = ({images}: SliderProps) => {
+export const Slider: FC<SliderProps> = ({images}) => {
     const containerRef = useRef<HTMLUListElement>(null)
     const containerWidthRef = useRef(0)
     const minOffsetXRef = useRef(0)
@@ -99,9 +99,8 @@ export const Slider = ({images}: SliderProps) => {
 
     return (
         <section className={s.sliderSection} id='slider'>
-            <div
-                className={globalStyles.container + ' ' + s.container}>
-                <div className={s.sectionTitle}>Portfolio</div>
+            <div className={s.sectionTitle}>Portfolio</div>
+            <div className={globalStyles.container + ' ' + s.container}>
                 <div className={s.sliderContainer} onTouchStart={onTouchStart} onMouseDown={onTouchStart}>
                     <div className={s.slider}>
                         <ul

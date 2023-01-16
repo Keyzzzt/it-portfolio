@@ -31,20 +31,6 @@ export const Contact = () => {
             email
         }
     }
-    const handleSave = () => {
-        const body: MessageBody = {
-            name,
-            lastName,
-            subject,
-            text,
-            email
-        }
-        // TODO Save to localStorage
-        // TODO Show success message
-
-    }
-
-
     return (
         <section className={s.contactSection} id='contact'>
             <div className={globalStyles.container + ' ' + s.container}>
@@ -96,17 +82,11 @@ export const Contact = () => {
                         placeholder="Type your message here..."
                         name="mail"
                     />
-                    <div className={s.buttons}>
-                        <input
-                            type="submit"
-                            value='Send'
-                        />
-                        <input
-                            type="button"
-                            onClick={handleSave}
-                            value='Save'
-                        />
-                    </div>
+                    <input
+                        className={s.submit}
+                        type="submit"
+                        value='Send'
+                    />
                 </form>
             </div>
         </section>

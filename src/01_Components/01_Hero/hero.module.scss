@@ -1,62 +1,64 @@
 @import "../../02_Styles/variables.scss";
 
 .heroSection {
-    background-color: $grey-dark;
-    padding: $verticalPaddingMobile;
-    min-height: 50vh;
+  background-color: $grey-dark;
+  padding: $verticalPaddingMobile;
+  min-height: 90vh;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    padding: 100px 20px;
-    align-items: center;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  // temp
+  background-color: #4e93e6;
 
-    // temp
-    background-color: #4e93e6;
-
-    @include breakpoint(480) {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
+  @include breakpoint(480) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .heroInfo {
-    align-self: flex-start;
-    min-height: 130px;
+  align-self: flex-start;
+  min-height: 130px;
 
-    // temp
-    background-color: #777777;
-    @include breakpoint(480) {
-        align-self: center;
-    }
+  // temp
+  background-color: #777777;
+
+  @include breakpoint(480) {
+    align-self: center;
+  }
 }
 
 .line1, .line2 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .name {
-    display: flex;
-    flex-wrap: wrap;
-    font-weight: 600;
-    letter-spacing: 3px;
-    font-size: 2rem;
-    position: relative;
-    margin-bottom: 10px;    
-    @include breakpoint(1024) {
-        font-size: 2.5rem;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  letter-spacing: 3px;
+  font-size: 2rem;
+  position: relative;
+  margin-bottom: 10px;
+  @include breakpoint(1024) {
+    font-size: 2.5rem;
+  }
 }
-.heroImage {
-    width: 100px;
-    height: 150px;
-    background-color: #777;
-    margin-top: 50px;
 
-    @include breakpoint(768) {
-        width: 250px;
-        height: 300px;
-    }
+.heroImage {
+  width: 200px;
+  height: 250px;
+  background-color: #777;
+  margin-top: 50px;
+
+  @include breakpoint(480) {
+    width: 280px;
+    height: 330px;
+  }
 }

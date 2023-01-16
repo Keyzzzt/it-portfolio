@@ -16,7 +16,7 @@
   background-color: #4e93e6;
 }
 
-.sectionTitle{
+.sectionTitle {
   font-size: $sectionTitleMobile;
   padding: 20px;
   text-align: center;
@@ -24,6 +24,7 @@
   //Temp
   background-color: silver;
 }
+
 .accordion {
 }
 
@@ -37,6 +38,7 @@
 .accordionItem:first-of-type {
   border-top: 1px solid $light;
 }
+
 .accordionItemBtn {
   display: flex;
   align-items: center;
@@ -48,14 +50,17 @@
   cursor: pointer;
   background-color: $grey-dark;
   color: $light;
-  &:hover{
+
+  &:hover {
     color: $orange;
   }
+
   @include breakpoint(768) {
     font-size: $fz-md;
     padding: 35px 20px;
   }
 }
+
 .accordionItemBtn::after {
   content: '';
   height: 18px;
@@ -87,6 +92,6 @@
   }
 }
 
-.singleLine{
+.singleLine {
   padding: 5px;
 }

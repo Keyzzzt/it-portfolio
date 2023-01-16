@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {FC} from 'react'
 import s from './slider.module.scss'
 
 export type SliderItemProps = {
@@ -7,7 +7,7 @@ export type SliderItemProps = {
     isNew?: boolean
 }
 
-export const SliderItem = ({imageSrc, imageAlt, isNew}: SliderItemProps) => {
+export const SliderItem: FC<SliderItemProps> = ({imageSrc, imageAlt, isNew}) => {
     return (
         <li className={s.sliderItem}>
             {isNew && <div className={s.new}>new</div>}

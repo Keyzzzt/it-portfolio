@@ -26,10 +26,9 @@ export const store = {
             ]
         },
         hero: {
-            line1: "Hi there",
-            line2: "I am",
-            name: "Igor Akeljev",
-            stack: ["A Frontend developer.", "Soon a Full Stack developer."],
+            greeting: "Hi there",
+            name: "I am Igor Akeljev",
+            stack: ["A Frontend developer.", "React Redux Typescript", 'and more...'],
         },
         accordion: {
             accordionItems: [

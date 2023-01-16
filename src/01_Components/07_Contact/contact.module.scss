@@ -5,7 +5,8 @@
   background-color: $grey-dark;
   padding: $verticalPaddingMobile;
 }
-.container{
+
+.container {
   background-color: #4e93e6;
 }
 
@@ -28,27 +29,12 @@
   }
 }
 
-.buttons {
-  width: 300px;
-  display: flex;
-  justify-content: space-between;
-  @include breakpoint(480) {
-    width: 400px;
-  }
-  & input {
-    width: 127px;
-    padding: 10px 10px;
-    border-radius: $bRadius5;
-    cursor: pointer;
-    border: none;
-    @include breakpoint(480) {
-      width: 170px;
-    }
-    @include breakpoint(768) {
-      font-size: 1.2rem;
-    }
-    &:hover {
-      color: $orange;
-    }
-  }
+.submit {
+  width: 400px;
+  padding: 10px 10px;
+  border-radius: $bRadius5;
+  cursor: pointer;
+  border: none;
+  font-size: 1.2rem;
 }
+
