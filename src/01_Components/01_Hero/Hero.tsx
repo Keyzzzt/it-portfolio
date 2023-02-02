@@ -30,6 +30,7 @@ export const Hero: FC<HeroProps> = ({greeting, name, stack}) => {
                     />
                 </div>
                 <div className={s.heroImage}>
+                    weqloihfiqe vg;ieqb vgh;eoiqnvg;e iuhvgrieuhr gviuhewrgivhi guuvbg;qiuh
                     {/*<img src="./photo.jpg" alt="photo"/>*/}
                 </div>
             </div>

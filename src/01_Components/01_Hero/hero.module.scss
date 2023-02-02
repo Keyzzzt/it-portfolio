@@ -1,9 +1,8 @@
 @import "../../02_Styles/variables.scss";
 
 .localContainer {
+  background: papayawhip;
   margin-top: 50px;
-
-
   @include breakpoint(768) {
     display: flex;
     align-items: center;
@@ -14,7 +13,7 @@
 .heroInfo {
   text-align: left;
   min-height: 130px;
-  min-width: 400px;
+  min-width: 300px;
   .name {
     font-size: 30px;
   }
@@ -24,8 +23,8 @@
 
 
 .heroImage {
-  margin: 50px auto;
+  border: 1px solid red;
   max-width: 400px;
   height: 400px;
-  background: papayawhip;
+  background: red;
 }
