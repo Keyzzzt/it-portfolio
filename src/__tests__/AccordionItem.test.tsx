@@ -2,7 +2,7 @@ import React from "react";
 import { render, screen, fireEvent } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
 import { faker } from '@faker-js/faker'
-import {AccordionItem} from "../01_Components/05_About/AccordionItem";
+import {AccordionItem} from "../01_Components/999_About/AccordionItem";
 import {store} from "../store";
 import * as hooks from "../utils/getRefValue"
 

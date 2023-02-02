@@ -4,7 +4,7 @@ import { faker } from '@faker-js/faker'
 import {store} from "../store";
 import React from "react";
 import {setReadOnlyProperty} from "../utils/testHelpers";
-import {Slider, SliderProps} from "../01_Components/03_Slider/Slider";
+import {Slider, SliderProps} from "../01_Components/999_Slider/Slider";
 
 
 const images = store.getState().slider.images

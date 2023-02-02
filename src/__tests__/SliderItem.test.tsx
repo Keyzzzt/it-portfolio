@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
 import {store} from "../store";
-import {SliderItem, SliderItemProps} from "../01_Components/03_Slider/SliderItem";
+import {SliderItem, SliderItemProps} from "../01_Components/999_Slider/SliderItem";
 import React from "react";
 
 const images = store.getState().slider.images

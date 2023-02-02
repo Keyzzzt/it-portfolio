@@ -1,38 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@100;400;500&display=swap');
+
+
+$Poppins: 'Poppins', sans-serif;
+
 // Colors
+$greenLight: #0ebeb0;
+$green: #0ca296;
+$greenDark: #0a8f85;
+
+
+
+
 $grey-dark: #1f1f20;
 $grey-medium: #252527;
 $grey-light: #363637;
+
 $blue: #4e93e6;
 $red: #dc3545;
 $light: #fff0f0;
 $orange: #fd7e14;
 
-// Font sizes
-$sectionTitleMobile: 2rem;
-$sectionTitleDesktop: 3rem;
-
-// Section vertical padding
-$verticalPaddingMobile: 40px 0;
-
-// Adaptive
-$mediaMax480:  80%;
-$mediaMax768:  80%;
-$mediaMax1024: 80%;
-$mediaMax1200: 80%;
-$mediaMin1201: 80%;
+// Header
+$headerHeight: 70px;
 
 
 // Border radius
 $bRadius10: 10px;
 $bRadius5: 5px;
+$bRadius3: 3px;
 
 // Transition
 $transition3: 0.3s ease all;
-
-// Font weight
-$fw-sm: 100;
-$fw-md: 400;
-$fw-lg: 700;
 
 
 @mixin breakpoint($point) {
@@ -48,6 +46,10 @@ $fw-lg: 700;
     @media (min-width: 1024px) {
       @content;
     }
+  } @else if $point == 992 {
+    @media (min-width: 992px) {
+      @content;
+    }
   } @else if $point == 768 {
     @media (min-width: 768px) {
       @content;
@@ -59,22 +61,3 @@ $fw-lg: 700;
   }
 }
 
-
-// REMOVE
-
-// spacing
-$spacing-sm: 12px;
-$spacing-md: 24px;
-$spacing-lg: 32px;
-$spacing-xl: 64px;
-
-
-// Header
-$headerHeight: 120px;
-
-// Font size
-$fz-sm: 0.5rem;
-$fz-md: 1.2rem;
-$fz-lg: 1.5rem;
-$fz-xl: 2rem;
-$fz-xxl: 2.5rem;

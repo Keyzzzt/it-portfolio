@@ -7,8 +7,8 @@
   z-index: 100;
 }
 
-.container {
-  height: 70px;
+.localContainer {
+  height: $headerHeight;
   position: relative;
   z-index: 100;
   @include breakpoint(1024) {
@@ -29,7 +29,7 @@
   background: rgba($grey-dark, 0.9);
   backdrop-filter: blur(2px);
   transform: translate(0);
-  transition: $transition3;
+  transition: transform 0.3s;
   letter-spacing: 2px;
 
   @include breakpoint(1024) {
@@ -47,20 +47,19 @@
     @include breakpoint(1024) {
       flex-direction: row;
       align-items: center;
-      margin-right: calc(0.5rem + #{$spacing-md});
     }
 
     li {
       &:not(:last-child) {
-        margin-bottom: $spacing-sm;
+        margin-bottom: 20px;
         @include breakpoint(1024) {
           margin-bottom: 0;
-          margin-right: $spacing-md;
+          margin-right: 20px;
         }
       }
 
       a {
-        transition: $transition3;
+        transition: 0.3s;
         text-transform: capitalize;
 
         &:hover {
@@ -87,7 +86,7 @@
   right: 30px;
 
   &:hover {
-    color: rgb(255, 165, 0);
+    color: $orange;
   }
 
   @include breakpoint(1024) {

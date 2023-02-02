@@ -1,7 +1,6 @@
 import React, {FC, useEffect, useState} from "react";
 import {useWindowSize} from "../../utils/useWindowSize";
 import s from './header.module.scss'
-import globalStyles from "../../02_Styles/global.module.scss";
 
 
 
@@ -26,11 +25,11 @@ export const Header: FC<HeaderProps> = ({menuItems}) =>  {
     }, [size, menuOpen])
     return (
         <header className={s.header}>
-            <div className={globalStyles.container + ' ' + s.container}>
+            <div className={`container ${s.localContainer}`}>
                 <nav className={`${s.menu} ${menuOpen && size.width! < 992 ? s.isMenu : ''}`}>
                     <ul>
                         {menuItems.map((menuItem, i) => (
-                            <li>
+                            <li key={i}>
                                 <a href={`#${menuItem.link}`} onClick={() => setMenuOpen(false)}>
                                     {menuItem.type === 'title' ? menuItem.title : (<i className={menuItem.class} />)}
                                 </a>

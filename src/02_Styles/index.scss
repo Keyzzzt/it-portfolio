@@ -1,20 +1,27 @@
 @import 'reset.scss';
 @import 'variables.scss';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
 
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 0;
   border: 0;
 }
 
+html {
+  font-size: 10px;
+  @include breakpoint(768) {
+    font-size: 12px;
+  }
+  @include breakpoint(992) {
+    font-size: 14px;
+  }
+}
 
 body {
-  font-family: 'Roboto', sans-serif;
-  color: $light;
-  font-size: 1rem;
+  font-family: $Poppins;
+  font-size: 16px;
   line-height: 1;
+  letter-spacing: 1.2px;
 }
 
 code {
@@ -33,4 +40,62 @@ input, textarea {
   outline: none;
 }
 
+.container {
+  max-width: 1190px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  // temp
+  background: #eaeaea;
+  border: 1px solid black;
+
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+
+
+
+// Section common styles
+.section {
+
+  padding: 5rem 0;
+  text-align: center;
+  // temp
+  border: 1px solid black;
+  background: powderblue;
+}
+.sectionTitle {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+.sectionSubtitle {
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 2rem;
+}
+
+.commonBtn {
+  font-size: 16px;
+  width: 150px;
+  height: 50px;
+  color: $light;
+  background-color: $greenLight;
+  padding: 15px;
+  border-radius: $bRadius3;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $green;
+  }
+
+  &:active {
+    background-color: $greenDark;
+  }
+}
 

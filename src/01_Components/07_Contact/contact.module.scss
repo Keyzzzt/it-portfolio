@@ -1,40 +1,10 @@
 @import "../../02_Styles/variables.scss";
 
-
-.contactSection {
-  background-color: $grey-dark;
-  padding: $verticalPaddingMobile;
-}
-
-.container {
-  background-color: #4e93e6;
-}
-
 .contactForm {
-  display: flex;
-  flex-direction: column;
+  margin-top: 50px;
   align-items: center;
   width: 100%;
 }
 
-.sectionTitle {
-  font-size: $sectionTitleMobile;
-  padding: 20px;
-  text-align: center;
 
-  //Temp
-  background-color: silver;
-  @include breakpoint(480) {
-    padding: 30px;
-  }
-}
-
-.submit {
-  width: 400px;
-  padding: 10px 10px;
-  border-radius: $bRadius5;
-  cursor: pointer;
-  border: none;
-  font-size: 1.2rem;
-}
 

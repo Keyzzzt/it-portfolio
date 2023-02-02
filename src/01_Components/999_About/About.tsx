@@ -1,7 +1,6 @@
 import {FC, useState} from "react"
 import s from "./about.module.scss"
 import {AccordionItem} from "./AccordionItem"
-import globalStyles from "../../02_Styles/global.module.scss";
 
 
 export type AccordionData = {
@@ -18,9 +17,9 @@ export const About: FC<AboutProps> = ({accordionItems}) => {
         setCurrentIndex((prev) => (prev === index ? -1 : index))
     }
     return (
-        <section id='about' className={s.about}>
-            <h2 className={s.sectionTitle}>About</h2>
-            <div className={globalStyles.container + ' ' + s.container}>
+        <section id='about' className='section'>
+            <h2 className='sectionTitle'>About</h2>
+            <div className={`container ${s.localContainer}`}>
                 <ul className={s.accordion}>
                     {accordionItems.map((item, i) => (
                         <AccordionItem

@@ -1,6 +1,5 @@
 import React, {FC, useRef, useState} from 'react'
 import s from './slider.module.scss'
-import globalStyles from "../../02_Styles/global.module.scss";
 import {SliderItem, SliderItemProps} from './SliderItem'
 import {getRefValue} from "../../utils/getRefValue";
 import {useStateRef} from "../../utils/useStateRef";
@@ -80,7 +79,6 @@ export const Slider: FC<SliderProps> = ({images}) => {
         window.removeEventListener('mousemove', onTouchMove)
         window.removeEventListener('mouseup', onTouchEnd)
     }
-    // React.MouseEvent - generic, используется когда наше событие работает внутри React, не в window
     const onTouchStart = (e: React.TouchEvent<HTMLDivElement> | React.MouseEvent<HTMLDivElement>) => {
         currentOffsetXRef.current = getRefValue(offsetXRef)
         startXRef.current = getTouchEventData(e).clientX
@@ -99,8 +97,8 @@ export const Slider: FC<SliderProps> = ({images}) => {
 
     return (
         <section className={s.sliderSection} id='slider'>
-            <div className={s.sectionTitle}>Portfolio</div>
-            <div className={globalStyles.container + ' ' + s.container}>
+            <h2 className='sectionTitle'>Portfolio</h2>
+            <div className={`container ${s.localContainer}`}>
                 <div className={s.sliderContainer} onTouchStart={onTouchStart} onMouseDown={onTouchStart}>
                     <div className={s.slider}>
                         <ul

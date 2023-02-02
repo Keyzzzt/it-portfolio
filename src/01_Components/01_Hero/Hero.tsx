@@ -1,8 +1,7 @@
 //@ts-ignore
 import TypeWriterEffect from 'react-typewriter-effect';
 import s from './hero.module.scss';
-import globalStyles from "../../02_Styles/global.module.scss";
-import {FC} from "react";
+import React, {FC} from "react";
 
 type HeroProps = {
     greeting: string
@@ -12,13 +11,11 @@ type HeroProps = {
 
 export const Hero: FC<HeroProps> = ({greeting, name, stack}) => {
     return (
-        <section className={s.heroSection} id='hero'>
-            <div className={globalStyles.container + ' ' + s.container}>
+        <section className='section' id='hero'>
+            <div className={`container ${s.localContainer}`}>
                 <div className={s.heroInfo}>
-                    <div className={s.line1}>{greeting}</div>
-                    <div className={s.name}>
-                        {name}
-                    </div>
+                    <div className='sectionText'>{greeting}</div>
+                    <h2 className='sectionTitle'>{name}</h2>
                     
                     <TypeWriterEffect
                         textStyle={{
@@ -32,7 +29,9 @@ export const Hero: FC<HeroProps> = ({greeting, name, stack}) => {
                         typeSpeed={30}
                     />
                 </div>
-                <div className={s.heroImage}></div>
+                <div className={s.heroImage}>
+                    {/*<img src="./photo.jpg" alt="photo"/>*/}
+                </div>
             </div>
         </section>
     );

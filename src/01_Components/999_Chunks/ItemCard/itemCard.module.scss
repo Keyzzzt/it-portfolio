@@ -1,0 +1,46 @@
+@import "../../../02_Styles/variables";
+.skillItem{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px;
+  width: 100%;
+  border-radius: $bRadius5;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  padding: 20px;
+  transition: transform .3s, box-shadow .3s;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  }
+  @include breakpoint(768){
+  width: calc(100% / 2 - 40px);
+  }
+  @include breakpoint(992){
+    width: calc(100% / 3 - 40px);
+  }
+}
+
+.title {
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.description {
+  text-align: justify;
+  word-break: break-word;
+}
+.image{
+  position: relative;
+  .button{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
+    //max-height: 10%;
+  }
+
+}
+

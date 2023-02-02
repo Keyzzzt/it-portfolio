@@ -1,20 +1,11 @@
 @import "../../02_Styles/variables.scss";
 
-.heroSection {
-  background-color: $grey-dark;
-  padding: $verticalPaddingMobile;
+.localContainer {
   min-height: 90vh;
-}
-
-.container {
-  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px;
-  // temp
-  background-color: #4e93e6;
 
   @include breakpoint(480) {
     flex-wrap: wrap;
@@ -26,6 +17,8 @@
 .heroInfo {
   align-self: flex-start;
   min-height: 130px;
+  width: 100%;
+  //min-width: 300px;
 
   // temp
   background-color: #777777;
@@ -35,30 +28,10 @@
   }
 }
 
-.line1, .line2 {
-  font-size: 1.5rem;
-}
 
-.name {
-  display: flex;
-  flex-wrap: wrap;
-  letter-spacing: 3px;
-  font-size: 2rem;
-  position: relative;
-  margin-bottom: 10px;
-  @include breakpoint(1024) {
-    font-size: 2.5rem;
-  }
-}
 
 .heroImage {
-  width: 200px;
-  height: 250px;
-  background-color: #777;
-  margin-top: 50px;
-
-  @include breakpoint(480) {
-    width: 280px;
-    height: 330px;
-  }
+  width: 100%;
+  height: 300px;
+  background: url("../../img/photo.jpg") no-repeat center;
 }

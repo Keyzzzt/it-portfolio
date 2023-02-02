@@ -15,21 +15,29 @@ export const store = {
               {type: 'icon', class: 'fa-sharp fa-solid fa-house', link: 'hero', },
               ]
         },
-        skills: {
-            skillsList: [
-                {imageUrl: 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png', skillName: 'JS', description: 'JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. All major web browsers have a dedicated JavaScript engine to execute the code on users\' devices.'},
-                {imageUrl: 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png', skillName: 'JS', description: 'JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. All major web browsers have a dedicated JavaScript engine to execute the code on users\' devices.'},
-                {imageUrl: 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png', skillName: 'JS', description: 'JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. All major web browsers have a dedicated JavaScript engine to execute the code on users\' devices.'},
-                {imageUrl: 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png', skillName: 'JS', description: 'JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. All major web browsers have a dedicated JavaScript engine to execute the code on users\' devices.'},
-                {imageUrl: 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png', skillName: 'JS', description: 'JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. All major web browsers have a dedicated JavaScript engine to execute the code on users\' devices.'},
-                {imageUrl: 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png', skillName: 'JS', description: 'JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. All major web browsers have a dedicated JavaScript engine to execute the code on users\' devices.'},
-            ]
-        },
         hero: {
             greeting: "Hi there",
             name: "I am Igor Akeljev",
             stack: ["A Frontend developer.", "React Redux Typescript", 'and more...'],
         },
+        skills: {
+            items: [
+                {imageUrl: 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png', title: 'JS', description: 'JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. All major web browsers have a dedicated JavaScript engine to execute the code on users\' devices.'},
+                {imageUrl: 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png', title: 'JS', description: 'JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. All major web browsers have a dedicated JavaScript engine to execute the code on users\' devices.'},
+                {imageUrl: 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png', title: 'JS', description: 'JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. All major web browsers have a dedicated JavaScript engine to execute the code on users\' devices.'},
+                {imageUrl: 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png', title: 'JS', description: 'JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. All major web browsers have a dedicated JavaScript engine to execute the code on users\' devices.'},
+                {imageUrl: 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png', title: 'JS', description: 'JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. All major web browsers have a dedicated JavaScript engine to execute the code on users\' devices.'},
+                {imageUrl: 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png', title: 'JS', description: 'JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. All major web browsers have a dedicated JavaScript engine to execute the code on users\' devices.'},
+
+            ]
+        },
+        portfolio: {
+            items: [
+                {imageUrl: 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png', title: 'JS', description: 'JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. All major web browsers have a dedicated JavaScript engine to execute the code on users\' devices.'},
+                {imageUrl: 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png', title: 'JS', description: 'JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. All major web browsers have a dedicated JavaScript engine to execute the code on users\' devices.'},
+            ]
+        },
+
         accordion: {
             accordionItems: [
                 {

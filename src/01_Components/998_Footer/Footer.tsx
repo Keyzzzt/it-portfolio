@@ -1,11 +1,17 @@
 import s from './footer.module.scss'
-import globalStyles from "../../02_Styles/global.module.scss";
 
 export const Footer = () => {
     return (
-        <footer className={s.footer}>
-            <div className={s.sectionTitle}>Footer</div>
-            <div className={globalStyles.container + ' ' + s.container}>
+        <footer className='section'>
+            <div className={`container ${s.localContainer}`}>
+                <h2 className='sectionTitle'>Igor Akeljev</h2>
+                <div className={s.socials}>
+                    <div className={s.socialsItem}></div>
+                    <div className={s.socialsItem}></div>
+                    <div className={s.socialsItem}></div>
+                    <div className={s.socialsItem}></div>
+                </div>
+                <div>&copy; Common!</div>
             </div>
         </footer>
     )

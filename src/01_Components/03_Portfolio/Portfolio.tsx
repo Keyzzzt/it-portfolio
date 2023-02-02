@@ -1,15 +1,15 @@
-import s from './skills.module.scss'
+import s from './portfolio.module.scss'
 import {ItemCard, ItemsList} from "../999_Chunks/ItemCard/ItemCard";
 import React, {FC} from "react";
 
 
-export const Skills: FC<ItemsList> = ({items}) => {
+export const Portfolio: FC<ItemsList> = ({items}) => {
     return (
         <section className='section' id='skills'>
             <div className={`container ${s.localContainer}`}>
-                <h2 className='sectionTitle'>Skills</h2>
-                <ul className='row'>
-                    <ItemCard items={items}/>
+                <h2 className='sectionTitle'>Portfolio</h2>
+                <ul className={`row ${s.portfolioRow}`}>
+                    <ItemCard items={items} showBtn/>
                 </ul>
             </div>
         </section>

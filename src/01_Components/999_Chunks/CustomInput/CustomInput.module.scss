@@ -19,25 +19,23 @@ textarea.customInput {
   }
 }
 
+.commonInput {
+  border-radius: $bRadius3;
+  padding: 10px;
+
+
+}
 .customInput {
   width: 100%;
-  border: 1px solid $grey-dark;
   border-radius: $bRadius5;
   padding: 10px 10px;
-  @include breakpoint(480) {
+  &::placeholder {
+    color: #8d8d8d;
   }
   @include breakpoint(768) {
     font-size: 1.2rem;
     width: 70%;
   }
-  @include breakpoint(1024) {
-  }
-
-  &::placeholder {
-    color: $grey-dark;
-  }
-
-
 }
 
 @keyframes shake {

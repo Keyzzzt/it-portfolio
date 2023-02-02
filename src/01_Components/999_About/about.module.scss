@@ -1,38 +1,12 @@
 @import "../../02_Styles/variables.scss";
 
-.about {
-  background-color: $grey-dark;
-  padding: $verticalPaddingMobile;
-  min-height: 50vh;
+.localContainer {
 
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  // temp
-  background-color: #4e93e6;
-}
-
-.sectionTitle {
-  font-size: $sectionTitleMobile;
-  padding: 20px;
-  text-align: center;
-
-  //Temp
-  background-color: silver;
-}
-
-.accordion {
 }
 
 
 .accordionItem {
   border-bottom: 1px solid $light;
-  background-color: $grey-dark;
-
 }
 
 .accordionItem:first-of-type {
@@ -48,15 +22,12 @@
   text-transform: uppercase;
   user-select: none;
   cursor: pointer;
-  background-color: $grey-dark;
-  color: $light;
-
   &:hover {
     color: $orange;
   }
 
   @include breakpoint(768) {
-    font-size: $fz-md;
+    //font-size: $fz-md;
     padding: 35px 20px;
   }
 }
@@ -79,15 +50,11 @@
 .accordionItemContainer {
   transition: height 0.4s ease-in-out;
   overflow: hidden;
-  background-color: $grey-light;
 }
 
 .accordionItemContent {
-  font-size: $fz-md;
-  font-weight: $fw-sm;
   padding: 10px;
   @include breakpoint(768) {
-    font-size: $fz-lg;
     padding: 10px 20px 40px 0;
   }
 }
