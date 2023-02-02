@@ -5,7 +5,7 @@ import React, {FC} from "react";
 
 export const Portfolio: FC<ItemsList> = ({items}) => {
     return (
-        <section className='section' id='skills'>
+        <section className='section' id='portfolio'>
             <div className={`container ${s.localContainer}`}>
                 <h2 className='sectionTitle'>Portfolio</h2>
                 <ul className={`row ${s.portfolioRow}`}>

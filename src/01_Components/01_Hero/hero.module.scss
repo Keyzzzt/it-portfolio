@@ -1,37 +1,31 @@
 @import "../../02_Styles/variables.scss";
 
 .localContainer {
-  min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin-top: 50px;
 
-  @include breakpoint(480) {
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
+
+  @include breakpoint(768) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
 .heroInfo {
-  align-self: flex-start;
+  text-align: left;
   min-height: 130px;
-  width: 100%;
-  //min-width: 300px;
-
-  // temp
-  background-color: #777777;
-
-  @include breakpoint(480) {
-    align-self: center;
+  min-width: 400px;
+  .name {
+    font-size: 30px;
   }
+
 }
 
 
 
 .heroImage {
-  width: 100%;
-  height: 300px;
-  background: url("../../img/photo.jpg") no-repeat center;
+  margin: 50px auto;
+  max-width: 400px;
+  height: 400px;
+  background: papayawhip;
 }

@@ -7,12 +7,8 @@ export const store = {
           menuItems: [
               {type: 'title', title: 'hero', link: 'hero', },
               {type: 'title', title: 'skills', link: 'skills', },
-              {type: 'title', title: 'slider', link: 'slider', },
               {type: 'title', title: 'portfolio', link: 'portfolio', },
-              {type: 'title', title: 'about', link: 'about', },
-              {type: 'title', title: 'availability', link: 'availability', },
               {type: 'title', title: 'contact', link: 'contact', },
-              {type: 'icon', class: 'fa-sharp fa-solid fa-house', link: 'hero', },
               ]
         },
         hero: {

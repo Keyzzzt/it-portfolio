@@ -14,8 +14,8 @@ export const Hero: FC<HeroProps> = ({greeting, name, stack}) => {
         <section className='section' id='hero'>
             <div className={`container ${s.localContainer}`}>
                 <div className={s.heroInfo}>
-                    <div className='sectionText'>{greeting}</div>
-                    <h2 className='sectionTitle'>{name}</h2>
+                    <p>{greeting}</p>
+                    <h2 className={s.name}>{name}</h2>
                     
                     <TypeWriterEffect
                         textStyle={{

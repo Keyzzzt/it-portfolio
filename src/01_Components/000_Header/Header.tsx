@@ -2,8 +2,6 @@ import React, {FC, useEffect, useState} from "react";
 import {useWindowSize} from "../../utils/useWindowSize";
 import s from './header.module.scss'
 
-
-
 type MenuItem = {
     type: string
     title?: string,
@@ -31,7 +29,7 @@ export const Header: FC<HeaderProps> = ({menuItems}) =>  {
                         {menuItems.map((menuItem, i) => (
                             <li key={i}>
                                 <a href={`#${menuItem.link}`} onClick={() => setMenuOpen(false)}>
-                                    {menuItem.type === 'title' ? menuItem.title : (<i className={menuItem.class} />)}
+                                    {menuItem.title}
                                 </a>
                             </li>
                         ))}
